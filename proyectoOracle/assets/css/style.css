@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*SECCION DEL HEADER*/
+.cabecera{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #e5e5e5;
+    justify-content: space-between;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.logo{
+    height: 100px;
+    margin: 5px;
+    border-radius: 5px;
+} 
+
+.menu-items{
+    list-style: none;
+    margin: 10px;
+    
+}
+.menu-lista {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.menu-items{
+    list-style: none;
+    margin: 10px;
+}
+.menu-link {
+    color: #808080;
+    margin-right: 1.25rem;
+    text-decoration: none;
+}
+.menu-link#activo{
+    color: #333333;
+    font-weight: bold;
+}
+.menu-link:hover{
+    text-decoration: underline;
+}
+/*FINAL HEADER*/
+
+/*INICIO DEL MAIN*/
+
+.banner__imagen{
+    width: 100%;
+}
+.banner__titulo{
+    color: #fdfdfd;
+    font-family: 'Pacifico', cursive;
+    font-size: 1.7rem;
+    text-align: center;
+    text-shadow: 0 4px 4px rgba(0,0,0,0.74);
+    margin-top: -100px;  
+}
+
+.main__section2--titulo{
+    text-align: center;
+    color: #8d0606;
+    font-family: 'Pacifico', cursive;
+    font-size: 2rem;
+    
+}
+.main__section--parrafo{
+    text-align: center;
+    color: #595959;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.recetas{
+    background-color: #e5e5e5;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 10px;  
+    
+}
+.receta{
+    background-color: #fdfdfd;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 10px; 
+    border-radius: 10px;  
+    
+}
+.receta:hover{
+    transform: scale(1.01);
+}
+.receta__imagen{
+    height: 200px;
+    border-radius: 10px;  
+}
+.recetas__contenido{
+    padding: 1rem;
+    
+}
+.receta__titulo{
+    font-size: 1.4375rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.receta__descripcion{
+    font-size: 1.1875rem;
+    line-height: 1.5rem;
+    text-align: justify;   
+}
+
+.receta__butom{
+    background: #8d0606;
+    border: none;
+    border-radius: 5px;
+    color: #fdfdfd;
+    padding: 0.5rem;
+    margin-top: 20px;
+    margin-left: calc(35%);
+}
+.receta__butom:hover{
+    transform: scale(1.1);
+}
+.personas{
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+    justify-content:center;  
+}
+
+.quienes-somos__titulo{
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    font-size: 51px;
+    font-weight: 400;
+    line-height: 89.56px;
+    color:#8D0606;
+}
+.quienes-somos__descripcion{
+    font-family: Roboto;
+    font-size: 20px;
+    text-align: center;
+    color: #8C8888;
+    margin: 0px 10px;
+    
+}
+.persona{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.persona__imagen{
+    height: 200px;
+    width: 200px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 100%;
+    
+}
+.persona__nombre{
+    margin: 1rem auto;
+    font-family: 'Pacifico', cursive;
+    color:#8D0606;
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0em;
+    
+}
+.persona__funcion {
+    color: #595959;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.persona__imagen--roberta{
+    background-image: url(../img/foto1.png);
+    
+}
+.persona__imagen--marcela{
+    background-image: url(../img/foto2.png);
+}
+.persona__imagen--andrea{
+    background-image: url(../img/foto3.png);
+}
+/*FINAL DEL MAIN*/
+
+.pie-de-pagina{
+    text-align:center ;
+    background-color: #bfbfbf;
+    padding: 1.5625rem 5rem;
+    color: #fdfdfd;
+}
+
+@media screen and (min-width: 768px) {
+    .cabecera{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    } 
+    .menu-lista{
+        display: flex;
+        flex-direction: row;
+  
+    }
+    .banner__titulo{
+       font-size: 5rem;
+       margin-top: -23%;
+    }
+    .main__section2--titulo{
+        margin-top: 200px;
+        font-size: 3rem;
+    }
+    .main__section--parrafo{
+        font-size: 2rem;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+    .recetas{
+        background-color: #e5e5e5;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+    
+    }
+    .receta{
+        background-color: #fdfdfd;
+        display: flex;
+        flex-direction: column;
+        width: 27%; 
+    }
+    .personas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    }
+
+
+
+}
